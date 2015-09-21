@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.edu.fanor.progweb.arquitetura.entity;
+package br.edu.fanor.progweb.arquitetura.entity.examples;
 
 import java.io.Serializable;
 import java.util.List;

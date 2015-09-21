@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.edu.fanor.progweb.arquitetura.bussines.UsuarioBO;
-import br.edu.fanor.progweb.arquitetura.entity.Usuarios;
+import br.edu.fanor.progweb.arquitetura.entity.examples.Usuarios;
 import br.edu.fanor.progweb.arquitetura.utils.MessagesUtils;
 import br.edu.fanor.progweb.arquitetura.utils.Navigation;
 /**
