@@ -1,5 +1,6 @@
 package br.edu.fanor.progweb.arquitetura.entity;
 
+import java.util.Calendar;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -10,6 +11,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table
@@ -20,6 +23,12 @@ public class Solicitacao {
 	private Long id;
 	
 	private String solicitante;
+	
+	@Temporal(TemporalType.DATE)
+	private Calendar data;
+	
+	@Temporal(TemporalType.TIME)
+	private Calendar hora;
 	
 	@ManyToOne
 	@JoinColumn(name= "tipo_solicitacao_id")

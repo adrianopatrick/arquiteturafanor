@@ -19,9 +19,11 @@ public class TipoSolicitacao {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	private String tipoSolicitacao;
+	
 	@ManyToOne
 	@JoinColumn(name = "usuario_id")
-	private List<Funcionario> usuarios;
+	private List<Usuario> usuarios;
 	
 	private String descricao;
 	
@@ -36,11 +38,11 @@ public class TipoSolicitacao {
 		this.id = id;
 	}
 
-	public List<Funcionario> getUsuarios() {
+	public List<Usuario> getUsuarios() {
 		return usuarios;
 	}
 
-	public void setUsuarios(List<Funcionario> usuarios) {
+	public void setUsuarios(List<Usuario> usuarios) {
 		this.usuarios = usuarios;
 	}
 
@@ -58,6 +60,14 @@ public class TipoSolicitacao {
 
 	public void setSolicitacao(Solicitacao solicitacao) {
 		this.solicitacao = solicitacao;
+	}
+
+	public String getTipoSolicitacao() {
+		return tipoSolicitacao;
+	}
+
+	public void setTipoSolicitacao(String tipoSolicitacao) {
+		this.tipoSolicitacao = tipoSolicitacao;
 	}
 	
 	

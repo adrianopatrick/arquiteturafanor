@@ -29,11 +29,13 @@ public class Usuario {
 	
 	private String senha;
 	
-	@ManyToMany
-	@JoinTable(name = "funcionario",
+	@OneToOne(mappedBy = "Coordenador")
+	/*
+	 * @JoinTable(name = "funcionario",
 			joinColumns = @JoinColumn(name="usuario_id",referencedColumnName="id"),
 			inverseJoinColumns=@JoinColumn(name="funcionario_id" ,referencedColumnName="id"))
-	private List<Funcionario> funcionarios;
+	*/
+	private Coordenador coordenador;
 	
 	@OneToOne(mappedBy = "Aluno")
 	private Aluno aluno;
@@ -88,14 +90,21 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public List<Funcionario> getFuncionarios() {
-		return funcionarios;
+	public Coordenador getCoordenador() {
+		return coordenador;
 	}
 
-	public void setFuncionarios(List<Funcionario> funcionarios) {
-		this.funcionarios = funcionarios;
+	public void setFuncionarios(Coordenador coordenador) {
+		this.coordenador = coordenador;
 	}
-	
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setFuncionarios(Aluno aluno) {
+		this.aluno = aluno;
+	}
 	
 	
 }

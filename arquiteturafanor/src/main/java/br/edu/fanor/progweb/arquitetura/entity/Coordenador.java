@@ -4,19 +4,22 @@ import java.util.List;
 
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-public class Funcionario {
+public class Coordenador {
 
 	
 	@ManyToMany(mappedBy = "Usuario")
 	private List<Usuario> usuarios;
 	
-	@ManyToOne
+	/* 
+	 * @ManyToOne
+	 
 	@JoinColumn(name = "tipo_funcionario_id")
 	private List<TipoFuncionario> funcionarios;
-
+	
+	*/
+	
 	@OneToMany
 	@JoinColumn(name = "usuario_id")
 	private Alocado alocado;
@@ -32,14 +35,17 @@ public class Funcionario {
 	public void setUsuarios(List<Usuario> usuarios) {
 		this.usuarios = usuarios;
 	}
-
+	
+	/*
 	public List<TipoFuncionario> getFuncionarios() {
 		return funcionarios;
 	}
+	
 
 	public void setFuncionarios(List<TipoFuncionario> funcionarios) {
 		this.funcionarios = funcionarios;
 	}
+	*/
 
 	public Alocado getAlocado() {
 		return alocado;
