@@ -1,6 +1,6 @@
 package br.edu.fanor.progweb.arquitetura.builder;
 
-import br.edu.fanor.progweb.arquitetura.entity.Usuarios;
+import br.edu.fanor.progweb.arquitetura.entity.examples.Usuarios;
 
 public class UsuariosBuilder {
 	

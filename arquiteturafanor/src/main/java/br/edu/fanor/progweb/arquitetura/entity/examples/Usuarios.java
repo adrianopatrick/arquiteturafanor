@@ -1,4 +1,4 @@
-package br.edu.fanor.progweb.arquitetura.entity;
+package br.edu.fanor.progweb.arquitetura.entity.examples;
 
 import java.util.List;
 

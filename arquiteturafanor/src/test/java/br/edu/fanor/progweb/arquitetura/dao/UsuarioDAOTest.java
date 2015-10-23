@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import br.edu.fanor.progweb.arquitetura.dao.UsuarioDAO;
-import br.edu.fanor.progweb.arquitetura.entity.Usuarios;
+import br.edu.fanor.progweb.arquitetura.entity.examples.Usuarios;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/test-context.xml")

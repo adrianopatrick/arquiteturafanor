@@ -9,7 +9,7 @@ import javax.faces.bean.SessionScoped;
 
 import org.springframework.stereotype.Component;
 
-import br.edu.fanor.progweb.arquitetura.entity.Usuarios;
+import br.edu.fanor.progweb.arquitetura.entity.examples.Usuarios;
 
 /**
  * @author patrick.cunha

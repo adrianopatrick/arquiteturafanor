@@ -1,7 +1,7 @@
 /**
  * Classe de entidade que representa uma permissão de usuário
  */
-package br.edu.fanor.progweb.arquitetura.entity;
+package br.edu.fanor.progweb.arquitetura.entity.examples;
 
 import java.io.Serializable;
 import java.util.List;
